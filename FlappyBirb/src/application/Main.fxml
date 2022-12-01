@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="plane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#pressed" prefHeight="600.0" prefWidth="339.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="339.0">
+         <image>
+            <Image url="@Assets/background-day.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="me" fitHeight="39.0" fitWidth="56.0" layoutX="142.0" layoutY="83.0">
+         <image>
+            <Image url="@Assets/icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="piped1" fitHeight="356.0" fitWidth="56.0" layoutX="350.0" layoutY="331.0">
+         <image>
+            <Image url="@Assets/pipe-green.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pipeu1" fitHeight="356.0" fitWidth="56.0" layoutX="350.0" layoutY="-146.0" rotate="180.0">
+         <image>
+            <Image url="@Assets/pipe-green.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="piped2" fitHeight="356.0" fitWidth="56.0" layoutX="525.0" layoutY="410.0">
+         <image>
+            <Image url="@Assets/pipe-green.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pipeu2" fitHeight="356.0" fitWidth="56.0" layoutX="525.0" layoutY="-67.0" rotate="180.0">
+         <image>
+            <Image url="@Assets/pipe-green.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="piped3" fitHeight="356.0" fitWidth="56.0" layoutX="700.0" layoutY="270.0">
+         <image>
+            <Image url="@Assets/pipe-green.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pipeu3" fitHeight="356.0" fitWidth="56.0" layoutX="700.0" layoutY="-207.0" rotate="180.0">
+         <image>
+            <Image url="@Assets/pipe-green.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="base" fitHeight="133.0" fitWidth="415.0" layoutY="467.0">
+         <image>
+            <Image url="@Assets/base.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="piped4" fitHeight="356.0" fitWidth="56.0" layoutX="875.0" layoutY="430.0">
+         <image>
+            <Image url="@Assets/pipe-green.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pipeu4" fitHeight="356.0" fitWidth="56.0" layoutX="875.0" layoutY="-47.0" rotate="180.0">
+         <image>
+            <Image url="@Assets/pipe-green.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

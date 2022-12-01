@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="340.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController">
+   <children>
+      <ImageView fitHeight="608.0" fitWidth="340.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Assets/background-day.png" />
+         </image>
+      </ImageView>
+      <ImageView cache="true" fitHeight="75.0" fitWidth="120.0" layoutX="110.0" layoutY="430.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/playbtn.png" />
+         </image>
+      </ImageView>
+      <Button alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="110.0" layoutY="430.0" mnemonicParsing="false" onAction="#gameOver" opacity="0.0" pickOnBounds="false" prefHeight="75.0" prefWidth="120.0" stylesheets="@application.css">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <ImageView fitWidth="280.0" layoutX="30.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/gameover.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="55.0" layoutY="210.0" prefHeight="157.0" prefWidth="230.0" style="-fx-background-color: #fca048; -fx-border-color: #e46018; -fx-border-width: 5; -fx-border-radius: 4;">
+         <children>
+            <Label fx:id="bestScore" layoutX="160.0" layoutY="90.0" prefHeight="50.0" prefWidth="65.0" style="-fx-font-size: 40; -fx-font-family: sans-serif;" text="0" textAlignment="CENTER" textFill="WHITE" />
+            <ImageView fitHeight="37.0" fitWidth="120.0" layoutX="18.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/score.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="100.0" layoutX="18.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/best.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="currentScore" layoutX="160.0" layoutY="20.0" prefHeight="50.0" prefWidth="65.0" style="-fx-font-size: 40; -fx-font-family: sans-serif;" text="0" textAlignment="CENTER" textFill="WHITE" />
+         </children></AnchorPane>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <effect>
+      <Blend />
+   </effect>
+</AnchorPane>
